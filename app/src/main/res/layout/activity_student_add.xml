@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activity.StudentAddActivity">
+
+    <TextView
+        android:id="@+id/tvAddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_student"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#9B9FA6"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddStudent"
+        app:layout_constraintStart_toStartOf="@+id/tvAddStudent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddStudent"
+        tools:layout_editor_absoluteY="117dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:background="#60C6C4"
+            android:textStyle="bold"
+            android:hint="NAME" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#9B9FA6"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textInputName"
+        app:layout_constraintStart_toStartOf="@+id/textInputName"
+        app:layout_constraintTop_toBottomOf="@+id/textInputName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SEAT NUMBER"
+            android:textStyle="bold"
+            android:background="#60C6C4"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#9B9FA6"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textInputSeat"
+        app:layout_constraintStart_toStartOf="@+id/textInputSeat"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSeat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#60C6C4"
+            android:hint="CLASS"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_style"
+        android:backgroundTint="@color/teal_700"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="ADD"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textInputClass"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/textInputClass"
+        app:layout_constraintTop_toBottomOf="@+id/textInputClass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
